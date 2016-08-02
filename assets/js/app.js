@@ -84,15 +84,9 @@ var attr = '<h4>Attribution</h4><a href=\'https://github.com/bmcbride/bootleaf\'
 		+ '<a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">leaflet marker cluster plugin</a>, '
 		+ '<a href="http://twitter.github.io/typeahead.js/" target="_blank">typeahead.js</a>, '
 		+ 'Geocodierung <a href="http://wiki.openstreetmap.org/wiki/Nominatim" target="_blank">Nominatim</a>';
-var mapquestOSM = L.tileLayer(
-		"http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
-			maxZoom : 18,
-			subdomains : [ "otile1", "otile2", "otile3", "otile4" ],
-			attribution : attr
-		});
 var cartoLight = L.tileLayer("https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png", {
 	  maxZoom: 18,
-		attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'
+		attribution: attr
 });
 
 /* Overlay Layers */
